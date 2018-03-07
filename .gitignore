@@ -1,0 +1,6 @@
+target/
+**/*.rs.bk
+.idea/
+.vscode/
+src/zombies.rs
+src/zombies_grpc.rs

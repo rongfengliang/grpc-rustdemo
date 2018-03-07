@@ -1,0 +1,4 @@
+FROM debian:jessie-slim
+WORKDIR /app
+ADD target/release/server /app/server
+CMD [ "./server" ]
