@@ -4,11 +4,11 @@ services:
     image: rpcserver-rust
     build:
       context: .
-      dockerfile: Dockerfile-cli
+      dockerfile: Dockerfile-server
   rpclient:
     image: rpc-client-rust
     build:
       context: .
-      dockerfile: Dockerfile-server
+      dockerfile: Dockerfile-cli
     depends_on:
       - rpcserver
